@@ -1,0 +1,21 @@
+# File Storage API
+
+A File Storage API é uma aplicação que permite o upload, download e listagem de arquivos.
+
+## Endpoints
+
+### Upload de Arquivos (POST)
+- **URL:** `http://localhost:8080/api/files/upload`
+- **Descrição:** Permite que os usuários façam upload de arquivos para o servidor.
+- **Parâmetros:**
+  - `file`: Arquivo a ser enviado (multipart/form-data).
+
+### Download de Arquivos (GET)
+- **URL:** `http://localhost:8080/api/files/download/{nome_do_arquivo}`
+- **Descrição:** Permite que os usuários baixem arquivos do servidor.
+- **Parâmetros:**
+  - `{nome_do_arquivo}`: Nome do arquivo a ser baixado.
+
+### Listagem de Arquivos (GET)
+- **URL:** `http://localhost:8080/api/files/list`
+- **Descrição:** Retorna a lista de todos os arquivos armazenados no servidor.
